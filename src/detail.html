@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <section>
+            <main>
+                <!-- <div class="banner">
+                    <img src="imgs/11.jpg">
+                </div>
+                <div class="title">
+                    <span>北京国际饭店</span>
+                    <em>查看评论 <i class="iconfont icon icon-chevron-thin-right"></i></em>
+                </div>
+                <div class="place">
+                    <span>
+                        北京国际饭店位于首都长安街中心繁华地段，距北京站仅咫尺之遥。机场班车、北京西站专线车等皆可直达饭店，尽享交通便利。
+                    </span>
+                    <em>
+                        <img src="imgs/10.png">
+                    </em>
+                </div>
+                <div class="detail">
+                    <p>北京国际饭店由29层主楼及辅助裙房楼宇组成，拥有风格迥异的各类精美套房，集 与古朴、典雅与辉煌为一体，客房设有中央空调控制系统、先进的音响、闭路电视、迷你型酒吧、冰箱、电子门锁及国际直拨电话。酒店内餐厅和娱乐设施完善，让您耳目一新，物有所值。</p>
+                    <em>详情 <i class="iconfont icon icon-chevron-thin-right"></i></em>
+                </div> -->
+                <script type="text/x-handlebars-template" id="detail-tpl">
+                    <div class="banner">
+                        <img src="{{url}}">
+                    </div>
+                    <div class="title">
+                        <span>{{title}}</span>
+                        <em>查看评论 <i class="iconfont icon icon-chevron-thin-right"></i></em>
+                    </div>
+                    <div class="place">
+                        <span>
+                        {{place}}
+                    </span>
+                        <em>
+                        <img src="imgs/10.png">
+                    </em>
+                    </div>
+                    <div class="detail">
+                        <p>{{detail}}</p>
+                        <em>详情 <i class="iconfont icon icon-chevron-thin-right"></i></em>
+                    </div>
+                </script>
+            </main>
+            <div class="box">
+                <header>
+                    <span>预定</span>
+                    <em>预定成功后100%有房</em>
+                </header>
+                <div class="main">
+                    <div>
+                        <p>
+                            <span>自主大床房</span>
+                            <span>不含早  部分有窗</span>
+                            <span>入住当天18点之前免费取消</span>
+                        </p>
+                        <em>预定</em>
+                    </div>
+                    <div>
+                        <p>
+                            <span>自主大床房</span>
+                            <span>不含早  部分有窗</span>
+                            <span>入住当天18点之前免费取消</span>
+                        </p>
+                        <em>预定</em>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="js/libs/require.js"></script>
+    <script>
+        require(['js/main.js'], function() {
+            require(['detail']);
+        })
+    </script>
+</body>
+
+</html>
